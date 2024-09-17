@@ -1,0 +1,6 @@
+bI = 'пассионарий'
+print(bI[0])
+print(bI[-1])
+print(bI[5:])
+print(bI[::-1])
+print(bI[1::2])
