@@ -2,9 +2,9 @@
 
 def get_matrix(n, m, value):
     matrix = []
-    for _ in range(n):
+    for i in range(n):
         row = []
-        for _ in range(m):
+        for j in range(m):
             row.append(value)
         matrix.append(row)
     return matrix
