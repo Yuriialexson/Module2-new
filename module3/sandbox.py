@@ -14,80 +14,105 @@
 
 number = 40203
 
+def get_multiplied_digits(number):
+    str_number = str(number)
+    if len(str_number) == 1:
+        return int(str_number)
+    first = int(str_number[0])
+    return first * get_multiplied_digits(int(str_number[1:]))
 
-multiplication_list = []
-str_number = str(number)
-first = str_number[0:1]
-tail = str_number[1:]
-print(first)
-print(tail)
-multiplication_list.append(first)
-print(multiplication_list)
+print(get_multiplied_digits(number))
 
-new_number1 = tail
-print(new_number1)
-first1 = new_number1
-str_number1 = str(new_number1)
-first1 = new_number1[0:1]
-tail1 = new_number1[1:]
-print(first1)
-print(tail1)
-multiplication_list.append(first1)
-print(multiplication_list)
 
-new_number2 = tail1
-print(new_number2)
-first1 = new_number2
-str_number2 = str(new_number2)
-first2 = new_number2[0:1]
-tail2 = new_number2[1:]
-print(first2)
-print(tail2)
-multiplication_list.append(first2)
-print(multiplication_list)
 
-new_number3 = tail2
-print(new_number3)
-first2 = new_number3
-str_number3 = str(new_number3)
-first3 = new_number3[0:1]
-tail3 = new_number3[1:]
-print(first3)
-print(tail3)
-multiplication_list.append(first3)
-print(multiplication_list)
 
-new_number4 = tail3
-print(new_number4)
-first4 = new_number4
-str_number4 = str(new_number4)
-first4 = new_number4[0:1]
-tail4 = new_number4[1:]
-print(first4)
-print(tail4)
-multiplication_list.append(first4)
-print(multiplication_list)
 
-multiplication_list = [int(i) for i in multiplication_list]
-print(multiplication_list)
-# import math
-# math.prod(multiplication_list)
-import functools
-print (functools.reduce(lambda a, b : a * b, multiplication_list))
+# multiplication_list = []
+# str_number = str(number)
+# first = str_number[0:1]
+# tail = str_number[1:]
+# print(first)
+# print(tail)
+# multiplication_list.append(first)
+# print(multiplication_list)
 
 
 
 
 
 
-
-
-
-# tail = number
-
-
-
-
+#
+#
+# new_number1 = tail
+# print(new_number1)
+# first1 = new_number1
+# str_number1 = str(new_number1)
+# first1 = new_number1[0:1]
+# tail1 = new_number1[1:]
+# print(first1)
+# print(tail1)
+# multiplication_list.append(first1)
+# print(multiplication_list)
+#
+# new_number2 = tail1
+# print(new_number2)
+# first1 = new_number2
+# str_number2 = str(new_number2)
+# first2 = new_number2[0:1]
+# tail2 = new_number2[1:]
+# print(first2)
+# print(tail2)
+# multiplication_list.append(first2)
+# print(multiplication_list)
+#
+# new_number3 = tail2
+# print(new_number3)
+# first2 = new_number3
+# str_number3 = str(new_number3)
+# first3 = new_number3[0:1]
+# tail3 = new_number3[1:]
+# print(first3)
+# print(tail3)
+# multiplication_list.append(first3)
+# print(multiplication_list)
+#
+# new_number4 = tail3
+# print(new_number4)
+# first4 = new_number4
+# str_number4 = str(new_number4)
+# first4 = new_number4[0:1]
+# tail4 = new_number4[1:]
+# print(first4)
+# print(tail4)
+# multiplication_list.append(first4)
+# print(multiplication_list)
+#
+# multiplication_list = [int(i) for i in multiplication_list]
+# print(multiplication_list)
+# # import math
+# # math.prod(multiplication_list)
+# import functools
+# print(functools.reduce(lambda a, b: a * b, multiplication_list))
+#
+#
+result = 1
+for i in str(number):
+    if i != "0":
+        result *= int(i)
+print(result)
+#
+# print(result)
+# print(result)
+# print(result)
+#
+#
+#
+#
+# # tail = number
+#
+#
+#
+#
 
 # tail = str_number
 # first = str_number[0:1]
