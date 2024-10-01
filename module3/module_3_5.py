@@ -1,11 +1,21 @@
-# def get_multiplied_digits(number):
-#    str_number = str(input('Введите число 40203: '))
-#    first = str_number[1:]
-#    number = first * get_multiplied_digits(int(str_number[1:]))
-#
-def get_multiplied_digits(number):
-   str_number = str(number)
-   first = str_number[1:]
-   return first * get_multiplied_digits(int(str_number[1:]))
 
-get_multiplied_digits(234324)
+
+def get_multiplied_digits(number):
+    str_number = str(number)
+    if len(str_number) == 1:
+        return int(str_number)
+    first = int(str_number[0])
+    return first * get_multiplied_digits(int(str_number[1:]))
+
+result = get_multiplied_digits(40203)
+print(result)
+
+
+# вариант через цикл
+
+number = 40203
+result = 1
+for i in str(number):
+    if i != "0":
+        result *= int(i)
+print(result)
