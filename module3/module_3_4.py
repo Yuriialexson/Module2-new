@@ -1,13 +1,14 @@
 #Задача "Однокоренные":
 
+
 def single_root_words(root_word, *other_words):
     same_words = []
-    for i in other_words:
-        if root_word in single_root_words:
-            same_words.append(i)
+    check_list = list(other_words)
+    compared_item = str(check_list[index])
+    for index in check_list:
+        if root_word in compared_item:
+            same_words.append(index)
     return same_words
-
-
 
 
 
