@@ -17,5 +17,5 @@ number = 40203
 result = 1
 for i in str(number):
     if i != "0":
-        result *= int(i)
+        result *= int(i) # ==> result = result * int(i)
 print(result)
