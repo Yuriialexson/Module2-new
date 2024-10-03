@@ -1,5 +1,5 @@
-from fake_math import fake_divide as fd
-from true_math import true_divide as td
+from Module4.module_4_1.fake_math import fake_divide as fd
+from Module4.module_4_1.true_math import true_divide as td
 
 
 result1 = fd(69, 3)
