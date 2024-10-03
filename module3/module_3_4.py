@@ -19,11 +19,11 @@ print(result1)
 print(result2)
 
 
-def single_root_words(root_word, *other_words): # создал функцию
-same_words = [] #создал список
-check_list = list(other_words) #создал список из *other_words чтобы с ним сравнивать
-compared_item = str(check_list[index]) #элемент для сравнения
-for index in check_list: #проходимся циклом по списку сравнения
-if root_word in compared_item: #если есть,
-same_words.append(index) #то добавляем в новый список для вывода в консоль
-return same_words
+# def single_root_words(root_word, *other_words): # создал функцию
+# same_words = [] #создал список
+# check_list = list(other_words) #создал список из *other_words чтобы с ним сравнивать
+# compared_item = str(check_list[index]) #элемент для сравнения
+# for index in check_list: #проходимся циклом по списку сравнения
+# if root_word in compared_item: #если есть,
+# same_words.append(index) #то добавляем в новый список для вывода в консоль
+# return same_words
